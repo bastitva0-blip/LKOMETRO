@@ -17,6 +17,9 @@ installable, themeable, and fully usable offline.
 > sourced from the official [lucknow.upmetrorail.com](https://lucknow.upmetrorail.com/).
 
 **Built by [Astitva Bhardwaj](https://www.linkedin.com/in/astitva-bhardwajlu/)**
+Inspired by **AhmMetro**, the Ahmedabad Metro companion app — credit to its developer,
+[Ubaid](https://www.linkedin.com/in/notubaid/), for the original concept and approach this
+project was modeled on.
 
 ## 🌐 Live Demo
 
