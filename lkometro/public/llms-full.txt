@@ -1,0 +1,60 @@
+# LkoMetro — Full Reference
+
+## What this app is
+LkoMetro is an independent, community-built companion app for the Lucknow Metro Red Line.
+It is not affiliated with, endorsed by, or representing the Uttar Pradesh Metro Rail
+Corporation (UPMRC) or any government entity. All timing and fare data is sourced from or
+derived from the official UPMRC website: https://lucknow.upmetrorail.com/
+
+## Lines
+
+### Red Line (operational since 8 March 2019)
+- Terminals: CCS International Airport ↔ Munshipulia
+- Length: 22.87 km
+- Stations: 21
+- End-to-end runtime: 40 minutes
+- Peak headway: 5 minutes 30 seconds (8–11 AM and 5–8 PM, weekdays)
+- Off-peak headway: ~8 minutes
+- Operating hours: 6:00 AM – 10:00 PM
+- Underground stations: Hussainganj, Sachivalaya, Hazratganj
+- Station list in order: CCS Airport, Amausi, Transport Nagar, Krishna Nagar, Singar Nagar,
+  Alambagh, Alambagh Bus Stand, Mawaiya, Durgapuri, Charbagh, Hussainganj, Sachivalaya,
+  Hazratganj, KD Singh Babu Stadium, Vishvavidyalaya, IT Chauraha, Badshah Nagar,
+  Lekhraj Market, Bhootnath Market, Indira Nagar, Munshipulia
+
+### Blue Line (under construction, Phase 1B, target ~2029)
+- Terminals: Charbagh ↔ Vasant Kunj
+- Length: 11.17 km
+- Stations: 12
+- Charbagh will be the interchange station with the Red Line
+
+## Fares (single journey token, station-count slab system)
+| Stations traveled | Fare |
+|---|---|
+| 1 | ₹10 |
+| 2 | ₹15 |
+| 3–6 | ₹20 |
+| 7–9 | ₹30 |
+| 10–13 | ₹40 |
+| 14–17 | ₹50 |
+| 18+ | ₹60 |
+
+GoSmart Card: 10% discount on every journey, ₹100 refundable security deposit.
+Tourist Card: ₹100 for 1-day unlimited travel, ₹250 for 3-day unlimited travel, plus ₹100
+refundable security deposit.
+Children under 90cm in height travel free.
+
+## Station facilities
+Free WiFi for smart card holders, free purified drinking water, and free toilets at every
+station. CCTV and metal detectors installed at every station.
+
+## App features
+- Interactive Leaflet map of the network with live train position simulation
+- Route planner with fare, duration, and next-train estimates
+- Offline station and landmark ("nearest station") search
+- Co-commute tool to find the optimal meeting station between two starting points
+- Crowd-level estimates by time of day and station
+- Works fully offline once loaded (PWA with service worker caching)
+
+## Credit
+Built by Astitva Bhardwaj. LinkedIn: https://www.linkedin.com/in/astitva-bhardwajlu/

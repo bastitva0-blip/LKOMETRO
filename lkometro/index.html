@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Apply the saved/system theme before first paint to avoid a flash of
+      // the wrong theme. Mirrors the logic in src/contexts/ThemeContext.tsx.
+      (function () {
+        try {
+          var pref = localStorage.getItem("lkometro:themePreference");
+          var isDark =
+            pref === "dark" ||
+            (pref !== "light" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          document.documentElement.classList.toggle("dark", isDark);
+          document.documentElement.style.colorScheme = isDark ? "dark" : "light";
+        } catch (e) {
+          /* ignore */
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0" />
+    <title>LkoMetro — Lucknow Metro Live Tracking, Fares & Routes</title>
+    <meta
+      name="description"
+      content="Plan your Lucknow Metro journey with LkoMetro: live train tracking, fare calculator, route planner and station info for the Red Line. Works offline. Not affiliated with UPMRC."
+    />
+    <meta name="theme-color" content="#9F1239" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#6E0C28" media="(prefers-color-scheme: dark)" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://lkometro.site/" />
+
+    <!-- Favicons / PWA icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LkoMetro" />
+    <meta property="og:title" content="LkoMetro — Lucknow Metro Live Tracking, Fares & Routes" />
+    <meta
+      property="og:description"
+      content="Live train tracking, route planning, fares and station info for the Lucknow Metro Red Line. Free, fast, and works offline."
+    />
+    <meta property="og:url" content="https://lkometro.site/" />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LkoMetro — Lucknow Metro Live Tracking, Fares & Routes" />
+    <meta
+      name="twitter:description"
+      content="Live train tracking, route planning, fares and station info for the Lucknow Metro Red Line."
+    />
+    <meta name="twitter:image" content="/og-image.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "LkoMetro",
+        "url": "https://lkometro.site/",
+        "description": "An unofficial companion app for the Lucknow Metro Red Line with live train tracking, route planning, fare calculation and offline station search.",
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": "Any (Progressive Web App)",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Astitva Bhardwaj",
+          "url": "https://www.linkedin.com/in/astitva-bhardwajlu/"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are Lucknow Metro fares?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lucknow Metro uses a station-count fare slab system ranging from ₹10 for 1 station to ₹60 for 18 or more stations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are Lucknow Metro operating hours?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lucknow Metro Red Line operates from 6:00 AM to 10:00 PM daily, with trains every 5 minutes 30 seconds during peak hours."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is LkoMetro an official UPMRC app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. LkoMetro is an independent companion app and does not represent a government entity. Timings and fares are sourced from the official UPMRC website."
+            }
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Lucknow Metro Red Line Stations",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "CCS Airport" },
+          { "@type": "ListItem", "position": 2, "name": "Amausi" },
+          { "@type": "ListItem", "position": 3, "name": "Transport Nagar" },
+          { "@type": "ListItem", "position": 4, "name": "Krishna Nagar" },
+          { "@type": "ListItem", "position": 5, "name": "Singar Nagar" },
+          { "@type": "ListItem", "position": 6, "name": "Alambagh" },
+          { "@type": "ListItem", "position": 7, "name": "Alambagh Bus Stand" },
+          { "@type": "ListItem", "position": 8, "name": "Mawaiya" },
+          { "@type": "ListItem", "position": 9, "name": "Durgapuri" },
+          { "@type": "ListItem", "position": 10, "name": "Charbagh" },
+          { "@type": "ListItem", "position": 11, "name": "Hussainganj" },
+          { "@type": "ListItem", "position": 12, "name": "Sachivalaya" },
+          { "@type": "ListItem", "position": 13, "name": "Hazratganj" },
+          { "@type": "ListItem", "position": 14, "name": "KD Singh Babu Stadium" },
+          { "@type": "ListItem", "position": 15, "name": "Vishvavidyalaya" },
+          { "@type": "ListItem", "position": 16, "name": "IT Chauraha" },
+          { "@type": "ListItem", "position": 17, "name": "Badshah Nagar" },
+          { "@type": "ListItem", "position": 18, "name": "Lekhraj Market" },
+          { "@type": "ListItem", "position": 19, "name": "Bhootnath Market" },
+          { "@type": "ListItem", "position": 20, "name": "Indira Nagar" },
+          { "@type": "ListItem", "position": 21, "name": "Munshipulia" }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

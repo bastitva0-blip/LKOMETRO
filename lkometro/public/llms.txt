@@ -1,0 +1,25 @@
+# LkoMetro
+
+> An unofficial companion web app for the Lucknow Metro Red Line: route planning, live train
+> tracking, fare calculation, and offline station/landmark search.
+
+LkoMetro does not represent a government entity. Timings and fares are sourced from the
+official UPMRC website (https://lucknow.upmetrorail.com/).
+
+## Key facts
+- Operator: Uttar Pradesh Metro Rail Corporation (UPMRC)
+- Lines: Red Line (operational, 21 stations, CCS Airport ↔ Munshipulia, 22.87 km, 40 min
+  end-to-end runtime), Blue Line (under construction, 12 stations, Charbagh ↔ Vasant Kunj,
+  11.17 km)
+- Fares: station-count slab system, ₹10 (1 station) to ₹60 (18+ stations)
+- GoSmart Card: 10% fare discount, ₹100 refundable deposit
+- Tourist Card: ₹100/1-day or ₹250/3-day unlimited travel, plus ₹100 refundable deposit
+- Children under 90cm travel free
+- Operating hours: 6:00 AM – 10:00 PM daily
+- Peak headway: 5 min 30 sec (8–11 AM, 5–8 PM weekdays); off-peak ~8 min
+
+## Pages
+- / — Main app: interactive map, route planner, live tracking, co-commute tool
+- /privacy.html — Privacy policy
+
+Built by Astitva Bhardwaj (https://www.linkedin.com/in/astitva-bhardwajlu/).

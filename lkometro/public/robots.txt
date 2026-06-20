@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lkometro.site/sitemap.xml

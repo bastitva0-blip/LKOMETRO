@@ -1,0 +1,737 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "line": "red",
+        "status": "operational"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.8893,
+            26.7606
+          ],
+          [
+            80.8912,
+            26.7732
+          ],
+          [
+            80.8942,
+            26.7859
+          ],
+          [
+            80.8985,
+            26.7956
+          ],
+          [
+            80.9046,
+            26.8055
+          ],
+          [
+            80.9105,
+            26.8137
+          ],
+          [
+            80.9147,
+            26.8189
+          ],
+          [
+            80.9199,
+            26.8245
+          ],
+          [
+            80.9267,
+            26.8312
+          ],
+          [
+            80.9229,
+            26.8358
+          ],
+          [
+            80.9373,
+            26.8438
+          ],
+          [
+            80.9428,
+            26.849
+          ],
+          [
+            80.9477,
+            26.852
+          ],
+          [
+            80.9527,
+            26.8555
+          ],
+          [
+            80.9527,
+            26.8595
+          ],
+          [
+            80.9511,
+            26.8648
+          ],
+          [
+            80.9489,
+            26.8701
+          ],
+          [
+            80.956,
+            26.87
+          ],
+          [
+            80.9645,
+            26.8694
+          ],
+          [
+            80.9725,
+            26.8744
+          ],
+          [
+            80.9785,
+            26.8789
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "line": "blue",
+        "status": "under_construction"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.9229,
+            26.8358
+          ],
+          [
+            80.9145,
+            26.8389
+          ],
+          [
+            80.9115,
+            26.8465
+          ],
+          [
+            80.909,
+            26.8541
+          ],
+          [
+            80.906,
+            26.8612
+          ],
+          [
+            80.918,
+            26.833
+          ],
+          [
+            80.902,
+            26.8685
+          ],
+          [
+            80.8975,
+            26.875
+          ],
+          [
+            80.892,
+            26.881
+          ],
+          [
+            80.8865,
+            26.8865
+          ],
+          [
+            80.8805,
+            26.892
+          ],
+          [
+            80.8745,
+            26.8975
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ccs_airport",
+        "name": "Ccs Airport",
+        "line": "red",
+        "order": 0,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.8893,
+          26.7606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "amausi",
+        "name": "Amausi",
+        "line": "red",
+        "order": 1,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.8912,
+          26.7732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "transport_nagar",
+        "name": "Transport Nagar",
+        "line": "red",
+        "order": 2,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.8942,
+          26.7859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "krishna_nagar",
+        "name": "Krishna Nagar",
+        "line": "red",
+        "order": 3,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.8985,
+          26.7956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "singar_nagar",
+        "name": "Singar Nagar",
+        "line": "red",
+        "order": 4,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9046,
+          26.8055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "alambagh",
+        "name": "Alambagh",
+        "line": "red",
+        "order": 5,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9105,
+          26.8137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "alambagh_bus_stand",
+        "name": "Alambagh Bus Stand",
+        "line": "red",
+        "order": 6,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9147,
+          26.8189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mawaiya",
+        "name": "Mawaiya",
+        "line": "red",
+        "order": 7,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9199,
+          26.8245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "durgapuri",
+        "name": "Durgapuri",
+        "line": "red",
+        "order": 8,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9267,
+          26.8312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "charbagh",
+        "name": "Charbagh",
+        "line": "red",
+        "order": 9,
+        "underground": false,
+        "interchange": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9229,
+          26.8358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "hussainganj",
+        "name": "Hussainganj",
+        "line": "red",
+        "order": 10,
+        "underground": true,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9373,
+          26.8438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sachivalaya",
+        "name": "Sachivalaya",
+        "line": "red",
+        "order": 11,
+        "underground": true,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9428,
+          26.849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "hazratganj",
+        "name": "Hazratganj",
+        "line": "red",
+        "order": 12,
+        "underground": true,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9477,
+          26.852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kd_singh_babu_stadium",
+        "name": "Kd Singh Babu Stadium",
+        "line": "red",
+        "order": 13,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9527,
+          26.8555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "vishvavidyalaya",
+        "name": "Vishvavidyalaya",
+        "line": "red",
+        "order": 14,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9527,
+          26.8595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "it_chauraha",
+        "name": "It Chauraha",
+        "line": "red",
+        "order": 15,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9511,
+          26.8648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "badshah_nagar",
+        "name": "Badshah Nagar",
+        "line": "red",
+        "order": 16,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9489,
+          26.8701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lekhraj_market",
+        "name": "Lekhraj Market",
+        "line": "red",
+        "order": 17,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.956,
+          26.87
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bhootnath_market",
+        "name": "Bhootnath Market",
+        "line": "red",
+        "order": 18,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9645,
+          26.8694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "indira_nagar",
+        "name": "Indira Nagar",
+        "line": "red",
+        "order": 19,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9725,
+          26.8744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "munshipulia",
+        "name": "Munshipulia",
+        "line": "red",
+        "order": 20,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9785,
+          26.8789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pandeyganj",
+        "name": "Pandeyganj",
+        "line": "blue",
+        "order": 1,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9145,
+          26.8389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "aminabad",
+        "name": "Aminabad",
+        "line": "blue",
+        "order": 2,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9115,
+          26.8465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "gautam_buddha_marg",
+        "name": "Gautam Buddha Marg",
+        "line": "blue",
+        "order": 3,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.909,
+          26.8541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "durgapuri_blue",
+        "name": "Durgapuri Blue",
+        "line": "blue",
+        "order": 4,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.906,
+          26.8612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lucknow_city_railway_station",
+        "name": "Lucknow City Railway Station",
+        "line": "blue",
+        "order": 5,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.918,
+          26.833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "medical_college_crossing",
+        "name": "Medical College Crossing",
+        "line": "blue",
+        "order": 6,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.902,
+          26.8685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nawajganj",
+        "name": "Nawajganj",
+        "line": "blue",
+        "order": 7,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.8975,
+          26.875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "thakurganj",
+        "name": "Thakurganj",
+        "line": "blue",
+        "order": 8,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.892,
+          26.881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "balaganj",
+        "name": "Balaganj",
+        "line": "blue",
+        "order": 9,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.8865,
+          26.8865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "musabagh",
+        "name": "Musabagh",
+        "line": "blue",
+        "order": 10,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.8805,
+          26.892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "vasant_kunj",
+        "name": "Vasant Kunj",
+        "line": "blue",
+        "order": 11,
+        "underground": false,
+        "interchange": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.8745,
+          26.8975
+        ]
+      }
+    }
+  ]
+}

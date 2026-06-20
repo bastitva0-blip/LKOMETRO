@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Ivory base, deep maroon primary (Red Line + Imambara brick), warm gold accent (zardozi thread) */
+    --background: 36 38% 97%;
+    --foreground: 350 35% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 350 35% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 350 35% 12%;
+
+    --primary: 350 68% 32%;
+    --primary-foreground: 36 50% 97%;
+
+    --secondary: 38 42% 92%;
+    --secondary-foreground: 350 35% 18%;
+
+    --muted: 36 24% 92%;
+    --muted-foreground: 350 12% 42%;
+
+    --accent: 40 68% 48%;
+    --accent-foreground: 350 40% 12%;
+
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 152 45% 32%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 80% 45%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 350 15% 87%;
+    --input: 350 15% 87%;
+    --ring: 350 68% 32%;
+
+    --redline: 350 68% 32%;
+    --blueline: 208 70% 38%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 350 30% 7%;
+    --foreground: 36 30% 94%;
+
+    --card: 350 24% 10%;
+    --card-foreground: 36 30% 94%;
+
+    --popover: 350 24% 10%;
+    --popover-foreground: 36 30% 94%;
+
+    --primary: 350 60% 52%;
+    --primary-foreground: 350 30% 8%;
+
+    --secondary: 350 18% 16%;
+    --secondary-foreground: 36 30% 94%;
+
+    --muted: 350 18% 16%;
+    --muted-foreground: 36 12% 65%;
+
+    --accent: 40 70% 55%;
+    --accent-foreground: 350 30% 8%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 152 40% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 80% 55%;
+    --warning-foreground: 350 30% 8%;
+
+    --border: 350 18% 18%;
+    --input: 350 18% 18%;
+    --ring: 350 60% 52%;
+
+    --redline: 350 65% 56%;
+    --blueline: 208 70% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+  ::selection {
+    @apply bg-accent/30;
+  }
+}
+
+@layer utilities {
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Subtle jaali (lattice) texture used sparingly as a signature motif */
+  .jaali-texture {
+    background-image: radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.08) 1px, transparent 0);
+    background-size: 16px 16px;
+  }
+}
+
+/* Leaflet ships its own internal z-index stack (panes up to ~650, default
+   zoom control at 1000) that was floating above our app chrome — bottom
+   dock, search dropdown, dialogs/drawers. Cap it well below our UI layers
+   (which start at z-[400] and go up to z-[1300]) so map controls never
+   intercept clicks meant for the app. */
+.leaflet-pane,
+.leaflet-top,
+.leaflet-bottom,
+.leaflet-control {
+  z-index: 200 !important;
+}
+.leaflet-popup {
+  z-index: 250 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
