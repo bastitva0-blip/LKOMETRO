@@ -3,6 +3,16 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "description": "Lucknow Metro companion app: route planning, fares, live tracking, offline station search.",
+  "license": "MIT",
+  "author": {
+    "name": "Astitva Bhardwaj",
+    "url": "https://www.linkedin.com/in/astitva-bhardwajlu/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bastitva0-blip/LKOMETRO"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
