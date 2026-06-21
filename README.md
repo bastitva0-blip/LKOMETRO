@@ -23,7 +23,7 @@ project was modeled on.
 
 ## 🌐 Live Demo
 
-**Website:** https://lkometro-svfa.vercel.app/
+**Website:** lkometro.vercel.app/
 
 ## ✨ Features
 
