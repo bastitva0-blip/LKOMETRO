@@ -27,20 +27,21 @@ export const AboutDialog = ({ open, onOpenChange }: AboutDialogProps) => {
 
           <TabsContent value="why" className="space-y-3 text-sm text-muted-foreground leading-relaxed">
             <p>
-              Lucknow Metro has run since 2019, but riders are stuck choosing between an
-              official site built for institutional info, not day-to-day commuting, and
-              generic map apps that don't understand metro-specific things like fare slabs,
-              train headways, or which stations are underground.
+              Lucknow Metro has been running since 2019, but if you just want to know
+              when your train arrives or what the fare is, the options aren't great.
+              The official site is built for announcements, and generic map apps don't
+              understand metro-specific things like fare slabs, train headways, or
+              which stations are underground.
             </p>
             <p>
-              <strong className="text-foreground">LkoMetro</strong> is a focused companion app
-              that answers the three questions a rider actually has: when's my train, what
-              does it cost, and how do I get there — fast, offline-friendly, and without ads
-              or clutter.
+              <strong className="text-foreground">LkoMetro</strong> focuses on the
+              three things a rider actually needs: when the next train is, what the
+              fare will be, and the fastest route there. No ads, no clutter, and it
+              works offline.
             </p>
             <p>
-              It's an independent project, built and maintained outside of UPMRC. See the
-              Privacy tab for what that means for your data.
+              It's an independent project, not affiliated with UPMRC. See the Privacy
+              tab for what that means for your data.
             </p>
           </TabsContent>
 
@@ -50,7 +51,7 @@ export const AboutDialog = ({ open, onOpenChange }: AboutDialogProps) => {
               <p>
                 This app does not represent a government entity. Timings and fares are sourced
                 from the official{" "}
-                <a
+                
                   href="https://lucknow.upmetrorail.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -63,24 +64,23 @@ export const AboutDialog = ({ open, onOpenChange }: AboutDialogProps) => {
             </div>
             <p>
               <strong className="text-foreground">No accounts, no servers.</strong> LkoMetro
-              doesn't have a backend or database. Everything — your GoSmart Card preference,
-              card balance tracker, and theme choice — is stored locally in your browser only,
-              and never sent anywhere.
+              has no backend or database. Your GoSmart Card preference, balance tracker,
+              and theme choice are all stored in your browser and never sent anywhere.
             </p>
             <p>
               <strong className="text-foreground">Card balance tracker</strong> is a manual
-              log you control. It does not read your actual physical card — there's no public
-              way to do that — it just keeps a running total based on amounts you enter
-              yourself, on this device.
+              log you control. It doesn't read your physical card (there's no public way
+              to do that) — it just keeps a running total based on amounts you enter
+              yourself, on this device only.
             </p>
             <p>
-              <strong className="text-foreground">Location</strong> is only used, with your
-              permission, to find your nearest station. Your coordinates never leave your
-              device.
+              <strong className="text-foreground">Location</strong> is only used, with
+              your permission, to find your nearest station. Your coordinates never leave
+              your device.
             </p>
             <p>
-              Map tiles are loaded from OpenStreetMap's public servers, which may log standard
-              request metadata (like your IP) per their own practices — we don't control that.
+              Map tiles load from OpenStreetMap's public servers, which may log standard
+              request metadata like your IP per their own practices. We don't control that.
             </p>
             <p>No analytics, no ads, no third-party trackers.</p>
           </TabsContent>
@@ -92,7 +92,7 @@ export const AboutDialog = ({ open, onOpenChange }: AboutDialogProps) => {
               </div>
               <p className="text-sm font-medium">Astitva Bhardwaj</p>
               <p className="text-xs text-muted-foreground">Designer & developer of LkoMetro</p>
-              <a
+              
                 href="https://www.linkedin.com/in/astitva-bhardwajlu/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -104,10 +104,10 @@ export const AboutDialog = ({ open, onOpenChange }: AboutDialogProps) => {
             <div className="flex items-start gap-2.5 rounded-lg bg-secondary/30 p-3 text-xs text-muted-foreground leading-relaxed">
               <Heart className="h-3.5 w-3.5 text-primary shrink-0 mt-0.5" />
               <p>
-                Built independently, end to end — route planning, live train simulation, fare
-                logic, offline support, and the map experience — to give Lucknow Metro riders
-                something the official site doesn't: a fast, focused companion for actually
-                getting around the city.
+                Built independently from scratch — route planning, live train simulation,
+                fare logic, offline support and the full map experience — because Lucknow
+                Metro riders deserved something better than the official site for
+                day-to-day commuting.
               </p>
             </div>
           </TabsContent>
