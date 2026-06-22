@@ -28,8 +28,8 @@ export const AboutDialog = ({ open, onOpenChange }: AboutDialogProps) => {
           <TabsContent value="why" className="space-y-3 text-sm text-muted-foreground leading-relaxed">
             <p>
               Lucknow Metro has been running since 2019, but if you just want to know
-              when your train arrives or what the fare is, the options aren't great.
-              The official site is built for announcements, and generic map apps don't
+              when your train arrives or what the fare is, the options are not great.
+              The official site is built for announcements, and generic map apps do not
               understand metro-specific things like fare slabs, train headways, or
               which stations are underground.
             </p>
@@ -40,81 +40,11 @@ export const AboutDialog = ({ open, onOpenChange }: AboutDialogProps) => {
               works offline.
             </p>
             <p>
-              It's an independent project, not affiliated with UPMRC. See the Privacy
+              It is an independent project, not affiliated with UPMRC. See the Privacy
               tab for what that means for your data.
             </p>
           </TabsContent>
 
           <TabsContent value="privacy" className="space-y-3 text-sm text-muted-foreground leading-relaxed">
             <div className="flex gap-2.5 rounded-lg bg-secondary/30 p-3">
-              <ShieldCheck className="h-4 w-4 text-muted-foreground shrink-0 mt-0.5" />
-              <p>
-                This app does not represent a government entity. Timings and fares are sourced
-                from the official{" "}
-                
-                  href="https://lucknow.upmetrorail.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary underline underline-offset-2"
-                >
-                  UPMRC website
-                </a>
-                .
-              </p>
-            </div>
-            <p>
-              <strong className="text-foreground">No accounts, no servers.</strong> LkoMetro
-              has no backend or database. Your GoSmart Card preference, balance tracker,
-              and theme choice are all stored in your browser and never sent anywhere.
-            </p>
-            <p>
-              <strong className="text-foreground">Card balance tracker</strong> is a manual
-              log you control. It doesn't read your physical card (there's no public way
-              to do that) — it just keeps a running total based on amounts you enter
-              yourself, on this device only.
-            </p>
-            <p>
-              <strong className="text-foreground">Location</strong> is only used, with
-              your permission, to find your nearest station. Your coordinates never leave
-              your device.
-            </p>
-            <p>
-              Map tiles load from OpenStreetMap's public servers, which may log standard
-              request metadata like your IP per their own practices. We don't control that.
-            </p>
-            <p>No analytics, no ads, no third-party trackers.</p>
-          </TabsContent>
-
-          <TabsContent value="credits" className="space-y-4">
-            <div className="text-center space-y-1.5 pt-1">
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-1">
-                <TrainFront className="h-6 w-6 text-primary" />
-              </div>
-              <p className="text-sm font-medium">Astitva Bhardwaj</p>
-              <p className="text-xs text-muted-foreground">Designer & developer of LkoMetro</p>
-              
-                href="https://www.linkedin.com/in/astitva-bhardwajlu/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs text-primary hover:underline mt-1"
-              >
-                <Linkedin className="h-3.5 w-3.5" /> LinkedIn <ExternalLink className="h-3 w-3" />
-              </a>
-            </div>
-            <div className="flex items-start gap-2.5 rounded-lg bg-secondary/30 p-3 text-xs text-muted-foreground leading-relaxed">
-              <Heart className="h-3.5 w-3.5 text-primary shrink-0 mt-0.5" />
-              <p>
-                Built independently from scratch — route planning, live train simulation,
-                fare logic, offline support and the full map experience — because Lucknow
-                Metro riders deserved something better than the official site for
-                day-to-day commuting.
-              </p>
-            </div>
-          </TabsContent>
-        </Tabs>
-      </DialogContent>
-    </Dialog>
-  );
-};
-
-export default AboutDialog;
+              <ShieldCheck className="h-4 w-4 text-muted-foreground shrink-0 mt-0.5"
