@@ -42,7 +42,9 @@ project was modeled on.
 - 🌗 Light / Dark / System theme toggle, persisted across visits
 - ℹ️ In-app About section — why the app exists, full privacy breakdown, and credits
 - 📱 Fully responsive, mobile-first design
-- 📴 Installable PWA with full offline support
+- 📴 Installable PWA with full offline support — native "Add to Home Screen" install prompt
+  on Android (Chrome/Edge); appears in the side menu when the browser detects the app is
+  installable, powered by the `beforeinstallprompt` API
 
 ## 🛠️ Tech Stack
 
@@ -60,19 +62,23 @@ npm run build    # production build to dist/
 npm run preview  # preview the production build
 ```
 
-## 📂 Project Structure 
+## 📂 Project Structure
+
+```
 src/
 ├── components/       UI components (map, route planner, dialogs, etc.)
-│   ├── ui/            Radix-based primitives (button, dialog, select, ...)
-│   └── icons/Custom SVG icon components (train, station,underground, interchange)
-├── contexts/GoSmartCardContext (balance + discount, persisted), ThemeContext
-├── data/Stations, fares, timetable, crowd sim, landmarks
-├── hooks/use-mobile, use-online-status, use-geolocation
-├── lib/routePlanner, stationSearch, friendsJourney, nearestStation,
-│leafletIcons, utils
-├── page/Index (main app), NotFound
+│   ├── ui/           Radix-based primitives (button, dialog, select, ...)
+│   └── icons/        Custom SVG icon components (train, station, underground, interchange)
+├── contexts/         GoSmartCardContext (balance + discount, persisted), ThemeContext
+├── data/             Stations, fares, timetable, crowd sim, landmarks
+├── hooks/            use-mobile, use-online-status, use-geolocation, use-install-prompt
+├── lib/              routePlanner, stationSearch, friendsJourney, nearestStation,
+│                     leafletIcons, utils
+├── pages/            Index (main app), NotFound
 ├── App.tsx
 └── main.tsx
+```
+
 ## 🧠 Architecture Details
 
 ### State management
@@ -113,6 +119,11 @@ Other notable logic:
 - **Card balance tracker** (`GoSmartCardContext.tsx`) — top-up and trip-deduction ledger with
   insufficient-balance protection, entirely client-side; deduction amounts are pulled straight
   from the route planner's calculated (and GoSmart-discounted) fare
+- **PWA install prompt** (`use-install-prompt.tsx`) — captures the browser's
+  `beforeinstallprompt` event and exposes a `triggerInstall` function; the install button
+  renders in the side menu only when the browser confirms the app is installable and not
+  already installed (checked via `display-mode: standalone`). iOS is excluded by design —
+  Safari does not fire this event; users can install via Share → Add to Home Screen manually.
 
 ### Theming
 Light and dark mode share one set of design tokens (CSS custom properties in `index.css`),
@@ -152,7 +163,7 @@ preference changes are watched live while "System" is selected.
 - ♿ Accessibility data — per-station lift/escalator availability
 - ⭐ Favorites & recent journeys — save frequent routes (e.g. home ↔ work)
 - 📢 Service alerts — manual or automated disruption/crowding notices
-- 📈 ~1000-landmark coverage along the Red Line corridor (mall, schools, colleges, colonies)
+- 📈 ~1000-landmark coverage along the Red Line corridor (malls, schools, colleges, colonies)
 - 🔁 Blue Line activation — flip `isWIP` once Phase 1B opens; routing and fare logic require
   no rewrite, only real station/timing data
 
