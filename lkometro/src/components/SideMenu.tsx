@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TrainFront, Info, Wallet, BookOpen } from "lucide-react";
+import { TrainFront, Info, Wallet, BookOpen, Download } from "lucide-react";
 import {
   Drawer,
   DrawerContent,
@@ -12,6 +12,7 @@ import { useGoSmartCard } from "@/contexts/GoSmartCardContext";
 import ThemeToggle from "@/components/ThemeToggle";
 import AboutDialog from "@/components/AboutDialog";
 import CardBalanceDialog from "@/components/CardBalanceDialog";
+import { useInstallPrompt } from "@/hooks/use-install-prompt";
 
 interface SideMenuProps {
   open: boolean;
@@ -23,6 +24,7 @@ export const SideMenu = ({ open, onOpenChange, onOpenTips }: SideMenuProps) => {
   const { hasGoSmartCard, setHasGoSmartCard, balance } = useGoSmartCard();
   const [aboutOpen, setAboutOpen] = useState(false);
   const [balanceOpen, setBalanceOpen] = useState(false);
+  const { canInstall, triggerInstall } = useInstallPrompt();
 
   return (
     <>
@@ -68,7 +70,7 @@ export const SideMenu = ({ open, onOpenChange, onOpenTips }: SideMenuProps) => {
               className="w-full flex items-center gap-3 rounded-lg px-3 py-3 hover:bg-secondary/50 transition-colors text-left"
             >
               <Info className="h-4 w-4 text-primary" />
-              <span className="text-sm font-medium">Fares, hours & tips</span>
+              <span className="text-sm font-medium">Fares, hours &amp; tips</span>
             </button>
 
             <button
@@ -76,8 +78,24 @@ export const SideMenu = ({ open, onOpenChange, onOpenTips }: SideMenuProps) => {
               className="w-full flex items-center gap-3 rounded-lg px-3 py-3 hover:bg-secondary/50 transition-colors text-left"
             >
               <BookOpen className="h-4 w-4 text-primary" />
-              <span className="text-sm font-medium">About & privacy</span>
+              <span className="text-sm font-medium">About &amp; privacy</span>
             </button>
+
+            {canInstall && (
+              <>
+                <Separator />
+                <button
+                  onClick={triggerInstall}
+                  className="w-full flex items-center gap-3 rounded-lg px-3 py-3 bg-primary/10 hover:bg-primary/20 transition-colors text-left"
+                >
+                  <Download className="h-4 w-4 text-primary" />
+                  <div>
+                    <p className="text-sm font-medium text-primary">Install LkoMetro</p>
+                    <p className="text-xs text-muted-foreground">Add to home screen</p>
+                  </div>
+                </button>
+              </>
+            )}
 
             <Separator />
 
