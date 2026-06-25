@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lkometro.vercel.app/sitemap.xml
+Sitemap: https://www.lucknowmetro.in/sitemap.xml
