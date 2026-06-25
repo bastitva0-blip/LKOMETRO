@@ -3,7 +3,7 @@
 # 🚇 LkoMetro
 ### Your companion app for navigating the Lucknow Metro — routes, fares, and live tracking, in seconds.
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-https://lkometro.vercel.app/-9F1239?style=for-the-badge)](https://lkometro.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-https://www.lucknowmetro.in/-9F1239?style=for-the-badge)](https://www.lucknowmetro.in/)
 [![View Presentation](https://img.shields.io/badge/📊_Presentation-Google_Slides-orange?style=for-the-badge)](https://docs.google.com/presentation/d/1QDZmr0qdIZguAzgds3jOiwQx3IKGKTen/edit?usp=sharing&ouid=115849183723543277039&rtpof=true&sd=true)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 </div>
